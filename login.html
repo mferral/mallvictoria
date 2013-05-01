@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+ 	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Mall Victoria</title>
+  	<!-- Included CSS Files (Compressed) -->
+  	<link rel="stylesheet" href="foundation/stylesheets/foundation.min.css">
+  	
+
+  <script src="foundation/javascripts/modernizr.foundation.js"></script>	
+
+  <style>
+  		.presen{
+  			height: 550px;
+  			width: 600px;
+  			margin-top: 30px;
+  		}
+  		#pcol1{
+  			height: 100%;
+  			width: 10%;
+  			position: relative;
+  			float: left;
+  		}
+  		#pcol1 #pc1r1{
+  			position: absolute;
+  			top: 30%;
+  			right: 0px;
+  			width: 25px;
+  			height: 140px;
+  			background: #ffaa17;
+  		}
+  		#pcol2{
+  			height: 100%;
+  			width: 20%;
+  			position: relative;
+  			float: left;
+  		}
+  		#pcol2 #pc2r1{
+  			position: absolute;
+  			top: 20%;
+  			width: 100%;
+
+  		}
+  		#pcol2 #pc2r1 #pc2r11{
+  			width: 100%;
+  			height: 30px;
+  			background: #ffaa17;
+  		}  		
+  		#pcol2 #pc2r1 #pc2r12{
+  			width: 100%;
+  			height: 200px;
+  			background-image: url('phone.jpeg');
+  			background-size: cover;
+  		}  		
+  		#pcol3{
+  			height: 100%;
+  			width: 30%;
+  			position: relative;
+  			float: left;
+  			z-index: 1;
+  			background: white;
+  		}
+
+  		#pcol3 #pc3r1{
+  			width: 100%;
+  			height: 150px;
+  			background-image: url('fancy.jpeg');
+  			background-size: cover;
+
+
+  		}  		
+
+  		#pcol3 #pc3r2{
+  			position: relative;
+  			width: 100%;
+  			height: 200px;
+  			background: rgb(97, 97, 97);	
+			/*-webkit-box-shadow: -12px -11px 14px rgba(50, 50, 50, 0.83);
+			-moz-box-shadow:    -12px -11px 14px rgba(50, 50, 50, 0.83);
+			box-shadow:         -12px -11px 14px rgba(50, 50, 50, 0.83);	
+			position: relative;	
+			left: 10px;
+  			bottom: 7px;
+  
+			*/	
+  		}  		
+
+  		#pcol3 #pc3r3{
+  			width: 100%;
+  			height: 100px;
+  			background-image: url('bolsa.jpg');
+  			background-size: cover;
+  		}  		
+
+  		#pcol3 #pc3r4{
+  			width: 100%;
+  			height: 40px;
+  			background: #ffaa17;
+  		}  		  		  		  		
+  		#pcol4{
+  			height: 100%;
+  			width: 40%;
+  			position: relative;
+  			float: left;
+  		}  		  	
+  		#pcol4 #pc4r1{
+  			height: 50%;
+  			width: 100%;
+  			position: relative;
+  		}
+   		#pcol4 #pc4r2{
+  			height: 50%;
+  			width: 100%;
+  			position: relative;
+  		} 	
+  		#pcol4 #pc4r1 #pc4r1c1{
+  			position: absolute;
+  			bottom: 0;
+  			width: 30%;
+  			height: 65%;
+  			background-image: url('reloj.jpg');
+  			background-size: cover;
+  		}	
+   		#pcol4 #pc4r1 #pc4r1c2{
+  			position: absolute;
+  			bottom: 0;
+  			left: 30%;
+  			width: 60%;
+  			height: 65%;
+  			background-image: url('tenis.jpg');
+  			background-size: cover;
+  		}	
+  		#pcol4 #pc4r1 #pc4r1c3{
+  			position: absolute;
+  			bottom: 0;
+  			left: 90%;
+  			width: 10%;
+  			height: 65%;
+  			background: #ffaa17;
+  		}	
+  		#pcol4 #pc4r2 #pc4r2c1{
+  			position: absolute;
+  			top: 0;
+  			width: 70%;
+  			height: 60%;
+  			background-image: url('auto.jpg');
+  			background-size: cover;  		
+  		}
+  		#pcol3 #pc3r2 .celda{
+  			color: white;
+  			font-size: 14px;
+  			margin-left: 10px;
+  			text-align: left;
+  			margin-top: 0px;
+  			bottom: 10px;
+  			position: absolute;
+  		}	  
+  		#pcol3 #pc3r2 .celda strong{
+  			font-size: 24px;
+  		}
+  		.login{
+  			text-align: center;
+  		}		  		 		
+  		.login img{
+  			margin-top: 70px;
+  		}
+  		.login h2{
+  			font-size: 77px;
+  		}
+  		.login h2 a:hover{
+  			color: #ffaa17;
+  		}
+  		.login h2 a{
+  			color: #222;
+  		}
+  		footer{
+  			height: 300px;
+  			width: 100%;
+  			background:  rgb(241, 241, 241);
+  			margin-top: 30px;
+  		}	  		
+  </style>
+</head>
+<body>
+
+    <!-- container -->
+    <div class="container">
+        <div class="row">
+            <div class="eight columns">           
+            	<div class="presen">
+            		<div id="pcol1"> 
+            			<div id="pc1r1"></div>           			
+            		</div>
+            		<div id="pcol2">
+            			<div id="pc2r1">
+            				<div id="pc2r11"></div>
+            				<div id="pc2r12"></div>
+            			</div>            			
+            		</div>
+            		<div id="pcol3">
+            			<div id="pc3r1"></div>
+            			<div id="pc3r2">
+
+            				<div class="celda">
+            					Registrate<br>
+            					y anunciate <br>con nosotros.<br><br>
+            					<strong>Gratis.</strong><br>
+            					Mall Victoria
+            				</div>
+            			</div>
+            			<div id="pc3r3"></div>
+            			<div id="pc3r4"></div>
+            		</div>
+            		<div id="pcol4">
+            			<div id="pc4r1">
+            				<div id="pc4r1c1"></div>
+            				<div id="pc4r1c2"></div>
+            				<div id="pc4r1c3"></div>
+            			</div>
+            			<div id="pc4r2">
+            				<div id="pc4r2c1"></div>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+            <div class="four columns">
+                
+                <div class="login">
+                	<img src="logo.jpg">
+                	 <h2><a href="#">Entrar</a></h2>
+                </div>
+            </div>         
+        </div>
+
+
+
+        <footer >
+        	<div class="row">
+            <div class="eight columns">           
+            
+            </div>
+            <div class="four columns">
+                <form action="">
+                	<fieldset>
+                		<legend>Acceso a ususarios registrados.</legend>
+                		<input type="text" placeholder="Ususario" style="border-radius:12px 12px 12px 12px;">
+                		<input type="text" placeholder="Password" style="border-radius:12px 12px 12px 12px;">
+                	</fieldset>
+                </form>
+            </div>      
+        	</div> 	
+        </footer>
+    </div>
+
+    <!-- container -->
+
+<!-- Included JS Files (Compressed) -->
+<script src="foundation/javascripts/jquery.js"></script>
+<script src="foundation/javascripts/foundation.min.js"></script>
+
+</body>
+</html>

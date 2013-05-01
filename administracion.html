@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mall Victoria</title>
+ 	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mall Victoria</title>
+  	<!-- Included CSS Files (Compressed) -->
+  	<link rel="stylesheet" href="foundation/stylesheets/foundation.min.css">
+  	<link rel="stylesheet" href="foundation/foundation_icons_all/foundation_icons_general/stylesheets/general_foundicons.css">
+ 	<link rel="stylesheet" href="foundation/foundation_icons_all/foundation_icons_social/stylesheets/social_foundicons.css">  	
+  	<link rel="stylesheet" href="estilo.css">
+  	<link rel="stylesheet" href="navbar.css">
+  	  
+</head>
+<body>
+	<nav id="navegacion" class="fixed contain-to-grid">
+		<div class="row">
+			<div class="twelve mobile-four colums">
+				<nav class="top-bar">
+					<ul class="top-bar">
+						<li class="name">
+							<h1><a href="#" id="title-bar">Mall Victoria</a></h1>
+						</li>						
+						<li class="toggle-topbar"><a href="#"></a></li>
+					</ul>					
+					<section>
+					  	<ul class="left">				  		
+					    <li class="has-dropdown" id="button-nav-bar">
+					      <a href="#">Navegacion</a>
+						    <ul class="dropdown">
+						        <li><a href="#">Hombres</a></li>
+						        <li><a href="#">Mujeres</a></li>
+						        <li><a href="#">Ni&ntilde;os</a></li>
+						        <li><a href="#">Estilo de Vida</a></li>
+						        <li><a href="#">Hogar</a></li>
+						        <li><a href="#">Electronicos</a></li>
+						        <li><a href="#">Mascotas</a></li>
+						        <li><a href="#">Comida</a></li>
+						        <li><a href="#">Vehiculos</a></li>	
+						    </ul>
+						</li>
+						</ul>
+						<ul class="right">
+					  		<li class="search">
+							<form>
+							    <input type="text" placeholder="Buscar">
+							</form>
+							</li>
+						  	<li class="divider"></li>
+						    <li id="button-bar"><a href="#" > <i class="general foundicon-lock"></i> Registrate</a></li>
+					  </ul>
+					</section>					
+				</nav>
+			</div>
+		</div>
+	</nav>
+	<div id="container">
+		<header  class="row hide-for-small"> 
+			<div class="ten columns">
+				<div class="bienvenido">
+					Bienvenidos
+				</div>
+				<h1>MallVictoria<span class="com">.com</span></h1>
+			</div>
+			<div class="two columns">
+				<img src="logo_1.png" style="margin-top:20px;" alt="">
+			</div>
+		</header>		
+		<section id="wrapper" class="row wrap">
+			<div class="twelve mobile-four columns">				
+				<!-- SECCIONES -->
+				<section id="menu-admin" class="two columns">
+					<h6>Modulo de Administracion</h6>				
+					<img src="img/settings.png" alt="">
+					<ul class="menu-admin-list">					  
+					  <li id="datos">					  	
+					  	Perfil
+					  </li>					  
+					  <li id="articulos">					  	
+					  	Articulos
+					  </li>		
+					  <li id="compras">					  	
+					  	Compras
+					  </li>				  
+					</ul>	
+					<p>Total Articulos Publicados: 0</p>
+					<p>Articulos En Publicacion: 0</p>					
+				</section>
+				<section id="contenedor-admin" class="ten columns">									
+				</section>
+			</div>									
+		</section>
+		<footer class="hide-for-small">
+			<div class="footer-head">
+				<div class="shadow-left"></div>
+				<div class="shadow-right"></div>
+				<div class="twelve columns bottom-green">
+					<h3>Regresar al top</h3>
+				</div>
+			</div>
+			<div class=" footer-contenido">
+				<div class="four columns"></div>
+				<div class="four columns"></div>
+				<div class="four columns"></div>
+			</div>					
+			<div class=" footer-social">
+				<a href="#"><i class="social foundicon-facebook icono"> <span class="texto">Facebook</span></i></a>
+				 <a href="#"><i class="social foundicon-twitter icono"> <span class="texto">Twitter</span></i></a>
+			</div>					
+		</footer>		
+	</div>
+	<section id="help" class="row">
+		<div class="two columns centered" style="text-align:center;"><img src="help.png" style="width:80px;margin-top:10px;" alt=""></div>
+	</section>
+<!-- Included JS Files (Compressed) -->
+<script src="foundation/javascripts/jquery.js"></script>
+<script src="foundation/javascripts/modernizr.foundation.js"></script>		
+<script src="foundation/javascripts/foundation.min.js"></script>
+<script src="foundation/javascripts/jquery.foundation.tooltips.js"></script>
+
+<script type="text/javascript">
+	$("#contenedor-admin").load("tutorial.html");
+	$("#datos").click(function (){
+		$("#contenedor-admin").load("datos.html");
+	});
+	$("#articulos").click(function (){
+		$("#contenedor-admin").load("articulos.html");
+	});	
+	$("#compras").click(function (){
+		$("#contenedor-admin").load("compras.html");
+	});		
+</script>
+</body>
+</html>
+
+<style>
+	.menu-admin-list{
+		width: 100%;
+	}
+
+	#menu-admin{
+		padding: 0px;
+		text-align: center;
+	}
+
+	#menu-admin img{
+		width: 90px;
+	}
+
+	.menu-admin-list li{
+		background: #999;		
+		text-align: center;
+		color: #fff;
+		border-radius: 5px;
+		width: 100%;
+		margin-bottom: 10px;	
+
+		-webkit-box-shadow: 0px 4px 6px rgba(51, 50, 50, 0.43);
+		-moz-box-shadow:    0px 4px 6px rgba(51, 50, 50, 0.43);
+		box-shadow:         0px 4px 6px rgba(51, 50, 50, 0.43);		
+	}
+
+	.menu-admin-list li:hover{
+		background: #ea8b2c;		
+		cursor: pointer;
+	}
+
+</style>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mall Victoria</title>
+ 	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Mall Victoria</title>
+  	<!-- Included CSS Files (Compressed) -->
+  	<link rel="stylesheet" href="foundation/stylesheets/foundation.min.css">
+  	<link rel="stylesheet" href="mallvictoria.css">
+
+  	<script src="foundation/javascripts/modernizr.foundation.js"></script>		
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="twelve colums">
+				<nav class="top-bar">
+					<ul class="top-bar">
+						<li class="name">
+							<h1><a href="#">Mall Victoria</a></h1>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row container2">
+			<div class="twelve columns">
+				<div class="row">		
+						<div class="wrapp">
+							<div class="lateral two">						
+									<div>
+										<ul id="menu">
+											<li class="item">							<div class="icono"></div>
+												<div class="imagen">
+													<img src="icos/home.png" alt="">
+												</div>							
+												<div class="texto">
+													<a href="#">Item 1</a>
+												</div>	
+											</li>
+											<li class="item">
+												<div class="icono"></div>
+												<div class="imagen">
+													<img src="icos/music.png" alt="">
+												</div>							
+												<div class="texto">
+													<a href="#">Item 2</a>
+												</div>	
+											</li>
+											<li class="item">
+												<div class="icono"></div>
+												<div class="imagen">
+													<img src="icos/rest.png" alt="">
+												</div>							
+												<div class="texto">
+													<a href="#">Item 3</a>
+												</div>	
+											</li>
+											<li class="item">
+												<div class="icono"></div>
+												<div class="imagen">
+													<img src="icos/phone.png" alt="">
+												</div>							
+												<div class="texto">
+													<a href="#">Item 4</a>
+												</div>	
+											</li>
+										</ul>
+
+									</div>
+
+							</div>
+							<div class="centro ten"></div>						
+						</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<footer>
+
+		<div class="row footer-contenido">
+			<div class="twelve columns"></div>
+		</div>
+		<div class="row">
+			<div class="footer-social"></div>
+		</div>
+	</footer>
+<!-- Included JS Files (Compressed) -->
+<script src="foundation/javascripts/jquery.js"></script>
+<script src="foundation/javascripts/foundation.min.js"></script>
+
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+    $('.contenido').css("height",$('.lateral').height());
+});	
+</script>

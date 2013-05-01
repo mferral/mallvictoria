@@ -1,0 +1,131 @@
+header{
+background: #0f0f0f; /* Old browsers */
+background: -moz-linear-gradient(top, #0f0f0f 0%, #2d2d2d 49%, #4f4f4f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0f0f0f), color-stop(49%,#2d2d2d), color-stop(100%,#4f4f4f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #0f0f0f 0%,#2d2d2d 49%,#4f4f4f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #0f0f0f 0%,#2d2d2d 49%,#4f4f4f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #0f0f0f 0%,#2d2d2d 49%,#4f4f4f 100%); /* IE10+ */
+background: linear-gradient(to bottom, #0f0f0f 0%,#2d2d2d 49%,#4f4f4f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#4f4f4f',GradientType=0 ); /* IE6-9 */	
+	min-height: 35px;
+	line-height: 35px;
+	/*margin: 0 0 30px 0;*/
+	padding: 0;
+	width: 100%;	
+}
+
+.container2{
+	-moz-box-shadow: 0 0 15px #DEDBD3;
+-webkit-box-shadow: 0 0 15px #DEDBD3;
+box-shadow: 0 0 15px #DEDBD3;
+}
+
+.footer-contenido{
+	height: 300px;
+background: #ff8132; /* Old browsers */
+background: -moz-linear-gradient(top, #ff8132 0%, #ff963a 49%, #ffc599 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8132), color-stop(49%,#ff963a), color-stop(100%,#ffc599)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ff8132 0%,#ff963a 49%,#ffc599 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ff8132 0%,#ff963a 49%,#ffc599 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ff8132 0%,#ff963a 49%,#ffc599 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ff8132 0%,#ff963a 49%,#ffc599 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8132', endColorstr='#ffc599',GradientType=0 ); /* IE6-9 */	
+}
+.top-bar{
+	margin: 0px;
+	background: transparent;
+	min-height: 35px;
+}
+
+.centro{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #ddd;
+	display: table-cell;
+}
+
+.lateral{
+	display: table-cell;	
+	height: 500px;
+	background: #fff;
+	text-align: center;
+}
+
+.lateral .logo{
+	width: 100;
+}
+
+.footer-social{
+	background: #828282;
+	height: 55px;
+	padding-right: 10px;	
+}
+
+.wrapp{
+display: table;
+width: 100%;
+}	
+
+
+#menu{
+	margin-top: 30px;
+	display: block;
+	list-style: none;
+}
+
+#menu .item{			
+	height: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	text-align: right;
+	position: relative;
+}
+
+.texto{
+	z-index: 1;
+	position: relative;
+	margin-right: 10px;	
+	font-size: 18px;
+	font-weight: bold;	
+}
+
+.icono{	
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin-top: 7px;
+	background: #fff;
+	position: absolute;
+	right: -35px;
+	top: -20px;
+}
+
+#menu li:hover .imagen{
+	right: -30px;
+transform: scale(1.2,1.2);
+-ms-transform: scale(1.2,1.2); /* IE 9 */
+-webkit-transform: scale(1.2,1.2); /* Safari and Chrome */
+-o-transform: scale(1.2,.1.2); /* Opera */
+-moz-transform: scale(1.2,1.2); /* Firefox */	
+
+}
+
+#menu li:hover .icono{
+
+transform: scale(1.2,1.2);
+-ms-transform: scale(1.2,1.2); /* IE 9 */
+-webkit-transform: scale(1.2,1.2); /* Safari and Chrome */
+-o-transform: scale(1.2,.1.2); /* Opera */
+-moz-transform: scale(1.2,1.2); /* Firefox */	
+
+}
+
+
+.imagen{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: -25px;
+	top: -5px;
+}
