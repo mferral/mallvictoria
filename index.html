@@ -4,102 +4,190 @@
 	<meta charset="UTF-8">
 	<title>Mall Victoria</title>
  	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mall Victoria</title>
   	<!-- Included CSS Files (Compressed) -->
   	<link rel="stylesheet" href="foundation/stylesheets/foundation.min.css">
-  	<link rel="stylesheet" href="mallvictoria.css">
+  	<link rel="stylesheet" href="foundation/foundation_icons_all/foundation_icons_general/stylesheets/general_foundicons.css">
+ 	<link rel="stylesheet" href="foundation/foundation_icons_all/foundation_icons_social/stylesheets/social_foundicons.css">  	
+  	<link rel="stylesheet" href="estilo.css">
+  	<link rel="stylesheet" href="navbar.css">
+  	
 
   	<script src="foundation/javascripts/modernizr.foundation.js"></script>		
 </head>
 <body>
-	<header>
+	<nav id="navegacion" class="fixed contain-to-grid">
 		<div class="row">
-			<div class="twelve colums">
+			<div class="twelve mobile-four colums">
 				<nav class="top-bar">
 					<ul class="top-bar">
 						<li class="name">
-							<h1><a href="#">Mall Victoria</a></h1>
+							<h1><a href="#" id="title-bar">Mall Victoria</a></h1>
+						</li>						
+						<li class="toggle-topbar"><a href="#"></a></li>
+					</ul>					
+					<section>
+					  	<ul class="left">				  		
+					    <li class="has-dropdown" id="button-nav-bar">
+					      <a href="#">Navegacion</a>
+						    <ul class="dropdown">
+						        <li><a href="#">Hombres</a></li>
+						        <li><a href="#">Mujeres</a></li>
+						        <li><a href="#">Ni&ntilde;os</a></li>
+						        <li><a href="#">Estilo de Vida</a></li>
+						        <li><a href="#">Hogar</a></li>
+						        <li><a href="#">Electronicos</a></li>
+						        <li><a href="#">Mascotas</a></li>
+						        <li><a href="#">Comida</a></li>
+						        <li><a href="#">Vehiculos</a></li>	
+						    </ul>
 						</li>
-					</ul>
+						</ul>
+						<ul class="right">
+					  		<li class="search">
+							<form>
+							    <input type="text" placeholder="Buscar">
+							</form>
+							</li>
+						  	<li class="divider"></li>
+						    <li id="button-bar"><a href="#" > <i class="general foundicon-lock"></i> Registrate</a></li>
+					  </ul>
+					</section>					
 				</nav>
 			</div>
 		</div>
-	</header>
-	<div class="container">
-		<div class="row container2">
-			<div class="twelve columns">
-				<div class="row">		
-						<div class="wrapp">
-							<div class="lateral two">						
-									<div>
-										<ul id="menu">
-											<li class="item">							<div class="icono"></div>
-												<div class="imagen">
-													<img src="icos/home.png" alt="">
-												</div>							
-												<div class="texto">
-													<a href="#">Item 1</a>
-												</div>	
-											</li>
-											<li class="item">
-												<div class="icono"></div>
-												<div class="imagen">
-													<img src="icos/music.png" alt="">
-												</div>							
-												<div class="texto">
-													<a href="#">Item 2</a>
-												</div>	
-											</li>
-											<li class="item">
-												<div class="icono"></div>
-												<div class="imagen">
-													<img src="icos/rest.png" alt="">
-												</div>							
-												<div class="texto">
-													<a href="#">Item 3</a>
-												</div>	
-											</li>
-											<li class="item">
-												<div class="icono"></div>
-												<div class="imagen">
-													<img src="icos/phone.png" alt="">
-												</div>							
-												<div class="texto">
-													<a href="#">Item 4</a>
-												</div>	
-											</li>
-										</ul>
-
-									</div>
-
-							</div>
-							<div class="centro ten"></div>						
+	</nav>
+	<div id="container">
+		<header  class="row hide-for-small"> 
+			<div class="ten columns">
+				<div class="bienvenido">
+					Bienvenidos
+				</div>
+				<h1>MallVictoria<span class="com">.com</span></h1>
+			</div>
+			<div class="two columns">
+				<img src="logo_1.png" style="margin-top:20px;" alt="">
+			</div>
+		</header>		
+		<section id="wrapper" class="row wrap">
+			<div class="twelve mobile-four mobile-four columns">
+				<div class="row">						
+					<article class="four columns">
+						<div class="articulo panel">
+							<div class="categoria">Electronicos</div>
+							<img src="iphone.jpg" alt="">
+							<div class="descripcion">
+								<h5>iPhone 5 </h5>
+								<div class="precio-detalle">
+									<!--<p class="precio-anterior">
+										<span>$ 0,000,000.00</span>
+									</p>-->
+									<span class="precio"><sup>$</sup> 9,999<sup>.00</sup></span>
+								</div>
+							</div>							
+							<div class="articulo-lugar">Cd. Victoria, Tamaulipas</div>
+							<duv class="articulo-tipo">Nuevo</duv>
 						</div>
+					</article>
+					<article class="four columns">
+						<div class="articulo panel">
+							<div class="categoria">Mujeres</div>
+							<img src="bolsachannel.jpg" alt="">
+							<div class="descripcion">
+								<h5>Bolsa Channel</h5>
+								<div class="precio-detalle">
+									<span class="precio"><sup>$</sup> 9,999<sup>.00</sup></span>
+								</div>
+							</div>							
+							<div class="articulo-lugar">Cd. Victoria, Tamaulipas</div>
+							<duv class="articulo-tipo">Nuevo</duv>
+						</div>
+					</article>					
+					<article class="four columns">
+						<div class="articulo panel">
+							<div class="categoria">Hombre</div>
+							<img src="reebok.jpg" alt="">
+							<div class="descripcion">
+								<h5>Reebok Marvel</h5>
+								<div class="precio-detalle">
+									<span class="precio"><sup>$</sup> 2,000<sup>.00</sup></span>
+								</div>
+							</div>							
+							<div class="articulo-lugar">Cd. Victoria, Tamaulipas</div>
+							<duv class="articulo-tipo">Nuevo</duv>
+						</div>
+					</article>
+					<article class="four columns">
+						<div class="articulo panel">
+							<div class="categoria">Vehiculos</div>
+							<img src="shelby.jpg" alt="">
+							<div class="descripcion">
+								<h5>Shelby Cobra</h5>
+								<div class="precio-detalle">
+									<span class="precio"><sup>$</sup> 700,000<sup>.00</sup></span>
+								</div>
+							</div>							
+							<div class="articulo-lugar">Cd. Victoria, Tamaulipas</div>
+							<duv class="articulo-tipo">Nuevo</duv>
+						</div>
+					</article>	
+					<article class="four columns">
+						<div class="articulo panel">
+							<div class="categoria">Comida</div>
+							<img src="comida.jpg" alt="">
+							<div class="descripcion">
+								<h5>Comida Italiana</h5>
+								<div class="precio-detalle">
+									<span class="precio"><sup>$</sup> 100<sup>.00</sup></span>
+								</div>
+							</div>							
+							<div class="articulo-lugar">Cd. Victoria, Tamaulipas</div>
+							<duv class="articulo-tipo">Nuevo</duv>
+						</div>
+					</article>	
+					<article class="four columns">
+						<div class="articulo panel">
+							<div class="categoria">Electronicos</div>
+							<img src="tv.jpg" alt="">
+							<div class="descripcion">
+								<h5>Television Samsung 40' Led</h5>
+								<div class="precio-detalle">
+									<span class="precio"><sup>$</sup> 6,500<sup>.00</sup></span>
+								</div>
+							</div>							
+							<div class="articulo-lugar">Cd. Victoria, Tamaulipas</div>
+							<duv class="articulo-tipo">Nuevo</duv>
+						</div>
+					</article>															
+				</div>				
+			</div>									
+		</section>
+		<footer class="hide-for-small">
+			<div class="footer-head">
+				<div class="shadow-left"></div>
+				<div class="shadow-right"></div>
+				<div class="twelve columns bottom-green">
+					<h3>Regresar al top</h3>
 				</div>
 			</div>
-		</div>
-
+			<div class=" footer-contenido">
+				<div class="four columns"></div>
+				<div class="four columns"></div>
+				<div class="four columns"></div>
+			</div>					
+			<div class=" footer-social">
+				<a href="#"><i class="social foundicon-facebook icono"> <span class="texto">Facebook</span></i></a>
+				 <a href="#"><i class="social foundicon-twitter icono"> <span class="texto">Twitter</span></i></a>
+			</div>					
+		</footer>		
 	</div>
-	<footer>
-
-		<div class="row footer-contenido">
-			<div class="twelve columns"></div>
-		</div>
-		<div class="row">
-			<div class="footer-social"></div>
-		</div>
-	</footer>
+	<section id="help" class="row">
+		<div class="two columns centered" style="text-align:center;"><img src="help.png" style="width:80px;margin-top:10px;" alt=""></div>
+	</section>
 <!-- Included JS Files (Compressed) -->
 <script src="foundation/javascripts/jquery.js"></script>
 <script src="foundation/javascripts/foundation.min.js"></script>
 
 </body>
 </html>
-
-<script>
-$(document).ready(function(){
-    $('.contenido').css("height",$('.lateral').height());
-});	
-</script>
